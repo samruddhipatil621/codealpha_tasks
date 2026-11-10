@@ -4,13 +4,13 @@ Teach a computer to read handwritten digits — just like how your phone reads h
 
 ---
 
-## 🎯 Objective
+##  Objective
 Build a model that looks at a 28×28 pixel image of a handwritten digit
 and correctly identifies which digit (0–9) it is.
 
 ---
 
-## 🧠 Concepts Covered (Explained Simply)
+##  Concepts Covered (Explained Simply)
 
 | Concept | What it means |
 |---|---|
@@ -46,7 +46,7 @@ Task3_Handwritten_Recognition/
 
 ---
 
-## 📊 Dataset — MNIST
+##  Dataset — MNIST
 
 | Property | Value |
 |---|---|
@@ -74,7 +74,7 @@ Each image is a 28×28 grid of numbers, like this (simplified):
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 ### ANN (Baseline)
 ```
@@ -101,7 +101,7 @@ Flatten → Dense(512) → Dense(256) → Output(10, Softmax)
 
 ---
 
-## ⚙️ Setup & Run
+##  Setup & Run
 
 ### Step 1 — Install packages
 ```bash
@@ -122,7 +122,7 @@ Open the generated `.png` files in the same folder to see all charts.
 
 ---
 
-## 📈 Expected Results
+##  Expected Results
 
 | Model | Expected Accuracy |
 |---|---|
@@ -134,7 +134,7 @@ On a dataset of 10,000 test images — 99% means only 100 mistakes!
 
 ---
 
-## 🎛️ Configuration Options (top of file)
+##  Configuration Options (top of file)
 
 ```python
 DATASET    = "mnist"   # "mnist" for digits, "emnist" for A-Z letters
@@ -149,7 +149,7 @@ BATCH_SIZE = 128       # Images per training step
 
 ---
 
-## ✍️ Predict Your Own Handwriting
+##  Predict Your Own Handwriting
 
 1. Open **MS Paint** (Windows) or **Preview** (Mac)
 2. Create new image → resize to **28×28 pixels**
@@ -164,7 +164,7 @@ predict_custom_image("my_digit.png", cnn_model, class_names)
 
 ---
 
-## 📊 Output Files Explained
+##  Output Files Explained
 
 | File | What it shows |
 |---|---|
@@ -197,7 +197,7 @@ print(f"Predicted digit: {digit}  Confidence: {probs[digit]*100:.1f}%")
 
 ---
 
-## 📚 Resources to Learn More
+##  Resources to Learn More
 
 - [MNIST on Wikipedia](https://en.wikipedia.org/wiki/MNIST_database)
 - [CNN Explained Visually](https://poloclub.github.io/cnn-explainer/) — highly recommended!
